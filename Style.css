@@ -117,13 +117,15 @@ body {
     cursor: pointer;
     padding: 5px;
     color: rgb(244,237,229);
+    fill: rgb(244,237,229);
     border-radius: 50%;
     font-size: 18px;
-    transition: color 0.2s linear, border 0.2s linear;
+    transition: color 0.2s linear, fill 0.2s linear, border 0.2s linear;
 }
 
 .slider__navigation-button:hover {
     color: rgb(186,92,80);
+    fill: rgb(186,92,80);
     border: 2px solid rgb(186,92,80);
 }
 
@@ -138,8 +140,9 @@ body {
     border-radius: 10px;
 }
 
-#lfrtIcon {
-    font-size: 50px;
+.icon {
+    height: 50px;
+    width: 50px;
 }
 
 .slider__navigation-container__adaptiv {
@@ -295,18 +298,16 @@ body {
     cursor: pointer;
     padding: 5px;
     color: rgb(244,237,229);
+    fill: rgb(244,237,229);
     border-radius: 50%;
     font-size: 18px;
-    transition: color 0.2s linear, border 0.2s linear, bottom 0.3s ease 0s;
+    transition: color 0.2s linear, border 0.2s linear, bottom 0.3s ease 0s, fill 0.2s linear;
 }
 
 .go-to-top__button:hover {
     color: rgb(186,92,80);
     border: 2px solid rgb(186,92,80);
-}
-
-#topicon {
-    font-size: 50px;
+    fill: rgb(186,92,80);
 }
 
 .footer {
@@ -359,8 +360,9 @@ body {
         width: 900px;
     }
 
-    #lfrtIcon {
-        font-size: 80px;
+    .icon {
+        width: 80px;
+        height: 80px;
     }
     
     .block__img {
@@ -506,8 +508,9 @@ body {
         transform: translateX(-50%);
     }
 
-    #lfrtIcon {
-        font-size: 30px;
+    .icon {
+        width: 30px;
+        height: 30px;
     }
 
     .slider__navigation-button__bottom {
