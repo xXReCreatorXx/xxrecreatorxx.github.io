@@ -141,6 +141,7 @@ body {
 }
 
 .icon {
+    fill: rgb(186,92,80);
     height: 50px;
     width: 50px;
 }
