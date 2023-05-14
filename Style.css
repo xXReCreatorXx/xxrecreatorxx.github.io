@@ -452,14 +452,13 @@ body {
         margin-right: 20px;
     }
 
-    #menu__activ__icon {
-        font-size: 50px;
-        color: rgb(244,237,229);
-        transition: color 0.2s linear;
+    .icon-close {
+        fill: rgb(244,237,229);
+        transition: fill 0.2s linear;
     }
 
-    #menu__activ__icon:hover {
-        color: rgb(186,92,80);
+    .icon-close:hover {
+        fill: rgb(186,92,80);
     }
 
     .menu-activ__container {
