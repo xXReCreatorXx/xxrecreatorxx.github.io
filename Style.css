@@ -1,0 +1,553 @@
+@font-face {
+    font-family: Oswald;
+    font-weight: 500;
+    src: url(Fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(22,32,42);
+    font-family: Oswald;
+    color: rgb(244,237,229);
+}
+
+.lock {
+    overflow: hidden;
+}
+
+.header {
+    margin-top: 5px;
+    margin-left: 240px;
+    margin-right: 20px;
+    background-image: url(img/bg1366a.webp);
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.header__text {
+    color: rgb(186,92,80);
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 35px;
+    font-size: 50px;
+}
+
+.menu__button {
+    display: none;
+    cursor: pointer;
+    border: 2px solid rgb(244,237,229);
+    border-radius: 5px;
+}
+
+.left-menu {
+    position: absolute;
+    margin-top: 30px;
+}
+
+.left-menu__button {
+    background-color: rgb(29,42,55);
+    margin-left: 40px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(244,237,229);
+    transition: color 0.2s linear;
+}
+
+.link:hover {
+    color: rgb(186,92,80);
+}
+
+.menu-activ {
+    display: none
+}
+
+.content {
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-right: 20px;
+}
+
+.registration {
+    background-color: rgb(29,42,55);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.registration__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(244,237,229);
+    transition: color 0.2s linear;
+}
+
+.registration__link:hover {
+    color: rgb(186,92,80);
+}
+
+.slider__container {
+    position: relative;
+    margin-top: 20px;
+    height: 530px;
+    background-color: rgb(29,42,55);
+    border-radius: 10px;
+}
+
+.slider__navigation-button {
+    border: 2px solid rgb(244,237,229);
+    background-color: rgb(29,42,55);
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(244,237,229);
+    border-radius: 50%;
+    font-size: 18px;
+    transition: color 0.2s linear, border 0.2s linear;
+}
+
+.slider__navigation-button:hover {
+    color: rgb(186,92,80);
+    border: 2px solid rgb(186,92,80);
+}
+
+.slider {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#lfrtIcon {
+    font-size: 50px;
+}
+
+.slider__navigation-container__adaptiv {
+    display: flex;
+    display: none;
+}
+
+.slider__navigation-left {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%); 
+}
+
+.slider__navigation__right {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%); 
+}
+
+.slider__slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slider__slide {
+    width: 25%;
+    transition: all 0.2s ease;
+}
+
+.slider__slide-img {
+    height: 100%;
+    width: 100%;
+}
+
+.slider__navigation-container__bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider__navigation-button__bottom {
+    width: 35px;
+    height: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(244,237,229);
+    opacity: 0.6;
+    transition: background-color 0.2s linear, opacity 0.2s linear;
+}
+
+.slider__navigation-button__bottom:hover {
+    background-color: rgb(186,92,80);
+    opacity: 1 !important;
+}
+
+#slideBtOne {
+    opacity: 1;
+}
+
+.content__title {
+    background-color: rgb(29,42,55);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.block__button-but {
+    text-decoration: none;
+    color: rgb(244,237,229);
+    transition: color 0.2s linear;
+}
+
+.block__button-but:hover {
+    color: rgb(186,92,80);
+}
+
+.content__block {
+    background-color: rgb(29,42,55);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.block__button {
+    background-color: rgb(22,32,42);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.block__container {
+    display: flex;
+}
+
+.block__img {
+    border-radius: 10px;
+    width: 360px;
+}
+
+.block__text {
+    margin-left: 10px;
+}
+
+.block__container__teg {
+    display: flex;
+}
+
+.block__button__teg {
+    background-color: rgb(22,32,42);
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.link__teg {
+    text-decoration: none;
+    color: rgb(244,237,229);
+    transition: color 0.2s linear;
+}
+
+.link__teg:hover {
+    color: rgb(186,92,80);
+}
+
+.go-to-top__button {
+    position: fixed; 
+    bottom: -100%; 
+    right: 30px; 
+    z-index: 99; 
+    border: 2px solid rgb(244,237,229);
+    outline: none;
+    background-color: rgb(29,42,55);
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(244,237,229);
+    border-radius: 50%;
+    font-size: 18px;
+    transition: color 0.2s linear, border 0.2s linear, bottom 0.3s ease 0s;
+}
+
+.go-to-top__button:hover {
+    color: rgb(186,92,80);
+    border: 2px solid rgb(186,92,80);
+}
+
+#topicon {
+    font-size: 50px;
+}
+
+.footer {
+    position: relative;
+    margin-top: 20px;
+    background-color: rgb(29,42,55);
+    height: 30vh;
+    width: 100%;
+}
+
+.footer__text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 50px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer__text__bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media all and (min-width:1367px) {
+    .header {
+        background-image: url(img/bg1920.webp);
+        height: 578px;
+    }
+
+    .header__text {
+        margin-top: 450px;
+        font-size: 80px;
+    }
+
+    .block__button {
+        font-size: 35px;
+    }
+
+    .slider__container {
+        height: 650px;
+    }
+
+    .slider {
+        height: 500px;
+        width: 900px;
+    }
+
+    #lfrtIcon {
+        font-size: 80px;
+    }
+    
+    .block__img {
+        width: 500px;
+    }
+
+    .block__text {
+        font-size: 25px;
+    }
+
+    .block__button__teg {
+        font-size: 30px;
+    }
+
+}
+
+@media all and (max-width:1024px) {
+    .left-menu {
+        display: none;
+    }
+
+    .header {
+        margin-left: 20px;
+        background-image: url(img/bg1024full.webp);
+        height: 342px;
+        position: relative;
+    }
+
+    .menu__button {
+        position: absolute;
+        background: rgb(244,237,229);
+        margin-top: 40px;
+        margin-left: 35px;
+        display: block;
+        transition: border 0.2s linear;
+    }
+
+    .menu__button:hover {
+        border: 2px solid rgb(186,92,80);
+    }
+    
+    .menu__line {
+        width: 35px;
+        height: 5px;
+        background-color: rgb(186,92,80);
+        margin: 6px 0;
+    }
+
+    .menu-activ {
+        display: block;
+        position: fixed;
+        background-color: rgb(29,42,55);
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: left 0.2s ease 0s;
+        z-index: 100;
+        top: 0;
+        left: -100%;
+    }
+
+    .menu-activ__header {
+        position: relative;
+        height: 80px;
+        width: 100%;
+        background-color: rgb(22,32,42);
+    }
+
+    .menu-activ__header__text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .menu-activ__button-close {
+        background: rgb(22,32,42);
+        cursor: pointer;
+        border: none;
+        position: absolute;
+        right: 0;
+        margin-top: 14px;
+        margin-right: 20px;
+    }
+
+    #menu__activ__icon {
+        font-size: 50px;
+        color: rgb(244,237,229);
+        transition: color 0.2s linear;
+    }
+
+    #menu__activ__icon:hover {
+        color: rgb(186,92,80);
+    }
+
+    .menu-activ__container {
+        overflow: auto;
+    }
+
+    .menu-activ__button {
+        display: block;
+        background-color: rgb(22,32,42);
+        margin-left: 40px;
+        margin-right: 40px;
+        border-radius: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: rgb(244,237,229);
+        transition: color 0.2s linear;
+    }
+
+    .link:hover {
+        color: rgb(186,92,80);
+    }
+
+    .header__text {
+        margin-top: 260px;
+        font-size: 50px;
+    }
+
+    .slider__container {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        height: auto;
+        width: 100%;
+    }
+
+    .slider {
+        height: 80%;
+        width: 80%;
+        transform: translateX(-50%);
+    }
+
+    #lfrtIcon {
+        font-size: 30px;
+    }
+
+    .slider__navigation-button__bottom {
+        width: 25px;
+    }
+
+    .block__img {
+        width: 80%;
+    }
+
+    .content {
+        margin-left: 20px;
+    }
+
+    .slider__navigation-container {
+        display: none;
+    }
+
+    .slider__navigation-container__adaptiv {
+        display: block;
+    }
+
+    .slider__navigation-left {
+        left: 20px;
+    }
+
+    .slider__navigation__right {
+        right: 20px;
+    }
+
+    .block__container {
+        display: block;
+    }
+
+    .block__container__teg {
+        display: block;
+    }
+
+    .block__button__teg {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+}

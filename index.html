@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="Script/Topfunction.JS"></script>
+        <script src="Script/MenuActiv.js"></script>
+        <script src="Script/Sliderfunction.js"></script>
+        <TITLE>PlayGame</TITLE>
+    </head>
+    <body>
+
+        <div class="left-menu">
+            <p class="left-menu__button"><a class="link" href="#">Главная</a></p>
+            <p class="left-menu__button"><a class="link" href="#">Ключи</a></p>
+            <p class="left-menu__button"><a class="link" href="#">Аккаунты</a></p>
+            <p class="left-menu__button"><a class="link" href="Parts/Gallery/Gallery.html">Галерея</a></p>
+            <p class="left-menu__button"><a class="link" href="Parts/Lab/Lab.html">Script</a></p>
+            <p class="left-menu__button"><a class="link" href="#">Поддержка</a></p>
+        </div>
+
+        <div class="header">
+            <button onclick="menuOpenFunction()" class="menu__button" title="Menu">
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+            </button>
+            <p class="header__text">Главная</p>
+        </div>
+
+        <div class="menu-activ" id="menuActiv">
+            <div class="menu-activ__header">
+                <p class="menu-activ__header__text">Меню</p>
+                <button onclick="menuCloseFunction()" class="menu-activ__button-close" title="Menu">
+                    <span class="material-symbols-outlined" id="menu__activ__icon">close</span>
+                </button>
+            </div>
+
+            <div class="menu-activ__container">
+                <p class="menu-activ__button"><a class="link" href="#">Главная</a></p>
+                <p class="menu-activ__button"><a class="link" href="#">Ключи</a></p>
+                <p class="menu-activ__button"><a class="link" href="#">Аккаунты</a></p>
+                <p class="menu-activ__button"><a class="link" href="Parts/Gallery/Gallery.html">Галерея</a></p>
+                <p class="menu-activ__button"><a class="link" href="Parts/Lab/Lab.html">Script</a></p>
+                <p class="menu-activ__button"><a class="link" href="#">Поддержка</a></p>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="registration">
+                <p><a class="registration__link" href="Parts/Registration/Registration.html">Регистрация</a></p>
+            </div>
+
+
+            <div class="slider__container">
+
+                <div class="slider__navigation-container">
+                    <div class="slider__navigation-left">
+                        <button onclick="slideLeftFunction()" class="slider__navigation-button"><span class="material-symbols-outlined" id="lfrtIcon">chevron_left</span></button>
+                    </div>
+
+                    <div class="slider__navigation__right">
+                        <button onclick="slideRightFunction()" class="slider__navigation-button"><span class="material-symbols-outlined" id="lfrtIcon">chevron_right</span></button>
+                    </div>
+                </div>
+                
+                <div class="slider">
+
+                    <div class="slider__navigation-container__adaptiv">
+                        <div class="slider__navigation-left">
+                            <button onclick="slideLeftFunction()" class="slider__navigation-button"><span class="material-symbols-outlined" id="lfrtIcon">chevron_left</span></button>
+                        </div>
+    
+                        <div class="slider__navigation__right">
+                            <button onclick="slideRightFunction()" class="slider__navigation-button"><span class="material-symbols-outlined" id="lfrtIcon">chevron_right</span></button>
+                        </div>
+                    </div>
+
+                    <div class="slider__slides">
+                        <div class="slider__slide" id="slideOne" style="margin-left: 0px;"><img class="slider__slide-img" src="img/skide6W.webp" alt="Слайд №1"></div>
+                        <div class="slider__slide"><img class="slider__slide-img" src="img/slide2W.webp" alt="Слайд №2"></div>
+                        <div class="slider__slide"><img class="slider__slide-img" src="img/slide1W.webp" alt="Слайд №3"></div>
+                        <div class="slider__slide"><img class="slider__slide-img" src="img/slide4W.webp" alt="Слайд №4"></div>
+                    </div>
+
+                    <div class="slider__navigation-container__bottom">
+                        <button onclick="slideOneFunction()" class="slider__navigation-button__bottom" id="slideBtOne"></button>
+                        <button onclick="slideTwoFunction()" class="slider__navigation-button__bottom" id="slideBtTwo"></button>
+                        <button onclick="slideThreeFunction()" class="slider__navigation-button__bottom" id="slideBtThree"></button>
+                        <button onclick="slideFourFunction()" class="slider__navigation-button__bottom" id="slideBtFour"></button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="content__title">
+                <p>Рекомендации</p>
+            </div>
+
+            <div class="content__block">
+                
+                <p class="block__button"><a class="block__button-but" href="#">Deep Rock Galactic</a></p>
+
+                <div class="block__container">
+                    <img src="img/ct1W.webp" alt="Deep Rock Galactic" class="block__img">
+                    <p class="block__text">Deep Rock Galactic — первый научно-фантастический шутер 
+                        с видом от первого лица для совместной игры, в котором 
+                        вас ждут крутые космические гномы, полностью разрушаемое 
+                        окружение, процедурно генерируемые системы пещер и 
+                        бесконечные волны инопланетных чудовищ.
+                    </p>
+                </div>
+
+                <div class="block__container__teg">
+                    <p class="block__button__teg"><a class="link__teg" href="#">Экшен</a></p>  
+                    <p class="block__button__teg"><a class="link__teg" href="#">Шутер от первого лица</a></p>
+                    <p class="block__button__teg"><a class="link__teg" href="#">Кооператив</a></p>
+                </div>
+
+            </div>
+
+            <div class="content__block">
+                
+                <p class="block__button"><a class="link" href="#">Hollow Knight</a></p>
+
+                <div class="block__container">
+                    <img src="img/ct2W.webp" alt="Hollow Knight" class="block__img">
+                    <p class="block__text">Hollow Knight – классическое двухмерное приключение
+                        в огромном взаимосвязанном мире. Исследуйте извилистые пещеры, 
+                        древние города и смертоносные пустоши, сражайтесь с порчеными 
+                        тварями и заводите дружбу со странными жуками, раскрывайте 
+                        древние тайны в самом сердце королевства.
+                    </p>
+                </div>
+
+                <div class="block__container__teg">
+                    <p class="block__button__teg"><a class="link__teg" href="#">Экшен</a></p>  
+                    <p class="block__button__teg"><a class="link__teg" href="#">Приключение</a></p>
+                    <p class="block__button__teg"><a class="link__teg" href="#">Инди</a></p>
+                </div>
+                
+            </div>
+
+            <div class="content__block">
+                
+                <p class="block__button"><a class="link" href="#">Dead Cells</a></p>
+
+                <div class="block__container">
+                    <img src="img/ct3W.webp" alt="Dead Cells" class="block__img">
+                    <p class="block__text">Dead Cells — это экшн-платформер в жанре Rogue-lite
+                        и Metroidvania. Вас ждет огромный, постоянно меняющийся 
+                        замок... Если, конечно, вы сможете победить тех, кто встанет 
+                        у вас на пути, в 2D-схватках в стиле Souls-lite. Без 
+                        сохранений. Убивайте, умирайте, учитесь и пробуйте снова.
+                    </p>
+                </div>
+
+                <div class="block__container__teg">
+                    <p class="block__button__teg"><a class="link__teg" href="#">Экшен</a></p>  
+                    <p class="block__button__teg"><a class="link__teg" href="#">Приключение</a></p>
+                    <p class="block__button__teg"><a class="link__teg" href="#">Инди</a></p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="go-to-top">
+            <button onclick="topFunction()" id="goTop" class="go-to-top__button" title="Go to top"><span class="material-symbols-outlined" id="topicon">expand_less</span></button>
+        </div>
+
+        <footer class="footer">
+            <p class="footer__text">PlayGame</p>
+            <p class="footer__text__bottom">&copy; Copyright Киряков Александр</p>
+        </footer>
+
+    </body>
+</html>
