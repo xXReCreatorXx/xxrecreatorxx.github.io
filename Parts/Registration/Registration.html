@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="../../Script/MenuActiv.js"></script>
+        <script src="../../Script/Topfunction.JS"></script>
+        <script src="../../Script/RegistrationFunction.js"></script>
+        <TITLE>PlayGame</TITLE>
+    </head>
+    <body>
+
+        <div class="left-menu">
+            <p class="left-menu__button"><a class="link" href="../../index.html">Главная</a></p>
+            <p class="left-menu__button"><a class="link" href="#">Ключи</a></p>
+            <p class="left-menu__button"><a class="link" href="#">Аккаунты</a></p>
+            <p class="left-menu__button"><a class="link" href="../Gallery/Gallery.html">Галерея</a></p>
+            <p class="left-menu__button"><a class="link" href="../Lab/Lab.html">Script</a></p>
+            <p class="left-menu__button"><a class="link" href="#">Поддержка</a></p>
+        </div>
+
+        <div class="header">
+            <button onclick="menuOpenFunction()" class="menu__button" title="menu__line">
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+            </button>
+            <p class="header__text">Регистрация</p>
+        </div>
+
+        <div class="menu-activ" id="menuActiv">
+            <div class="menu-activ__header">
+                <p class="menu-activ__header__text">Меню</p>
+                <button onclick="menuCloseFunction()" class="menu-activ__button-close" title="menu__line">
+                    <span class="material-symbols-outlined" id="menu__activ__icon">close</span>
+                </button>
+            </div>
+
+            <div class="menu-activ__container">
+                <p class="menu-activ__button"><a class="link" href="../../index.html">Главная</a></p>
+                <p class="menu-activ__button"><a class="link" href="#">Ключи</a></p>
+                <p class="menu-activ__button"><a class="link" href="#">Аккаунты</a></p>
+                <p class="menu-activ__button"><a class="link" href="../Gallery/Gallery.html">Галерея</a></p>
+                <p class="menu-activ__button"><a class="link" href="../Lab/Lab.html">Script</a></p>
+                <p class="menu-activ__button"><a class="link" href="#">Поддержка</a></p>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="registration-block" id="registration" style="display: block;">
+
+                <div class="registration-block__text"><a>Создание учетной записи</a></div>
+
+                <div class="registration-block__conteiner">
+                    <input class="registration-block__field__input" id="username" type="text" placeholder="Имя или ник"></imput>
+                    <div></div>
+                    <input class="registration-block__field__input" id="login" type="text" placeholder="Почта"></imput>
+                    <div></div>
+                    <input class="registration-block__field__input" id="password" type="password" placeholder="Пароль"></imput>
+                </div>
+
+                <div class="registration-block__button-conteiner">
+                    <button class="registration-block__button" onclick="registrationFunction()"><a>Зарегистрироваться</a></button>
+                </div>
+
+            </div>
+
+            <div class="registration-block__output" id="outLog" style="display: none;">
+
+                <div class="registration-block__text"><a>Учетная запись была создана</a></div>
+
+                <div class="registration-block__conteiner">
+                    <div class="registration-block__text__output"><a>Ваше имя пользователя</a></div>
+                    <div class="registration-block__field__output"><a id="accountUsername"></a></div>
+                    <div class="registration-block__text__output"><a>Ваш логин</a></div>
+                    <div class="registration-block__field__output"><a id="accountLogin"></a></div>
+                    <div class="registration-block__text__output"><a>Ваш пароль</a></div>
+                    <div class="registration-block__field__output"><a id="accountPassword"></a></div>
+                </div>
+
+                <div class="registration-block__button-conteiner">
+                    <button class="registration-block__button" onclick="logOutFunction()"><a>Выйти</a></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="go-to-top">
+            <button onclick="topFunction()" id="goTop" class="go-to-top__button" title="Go to top"><span class="material-symbols-outlined" id="topicon">expand_less</span></button>
+        </div>
+
+        <footer class="footer">
+            <p class="footer__text">PlayGame</p>
+            <p class="footer__text__bottom">&copy; Copyright Киряков Александр</p>
+        </footer>
+
+    </body>
+</html>
